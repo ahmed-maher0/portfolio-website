@@ -345,27 +345,33 @@
                     </div>
                 </div>
                  <div class="col-lg-7">
-                    <form class="p-4 border rounded shadow-sm bg-white">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="p-4 border rounded shadow-sm bg-white">
+                        <!-- Hidden field for spam protection -->
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="d-none">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </p>
+                        
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="name" class="form-label" data-i18n="contact.form.name">Your Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Dr. Name">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Dr. Name" required>
                             </div>
                              <div class="col-md-6">
                                 <label for="phone" class="form-label" data-i18n="contact.form.phone">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" placeholder="+20...">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+20..." required>
                             </div>
                             <div class="col-12">
                                 <label for="specialty" class="form-label" data-i18n="contact.form.specialty">Specialty / Clinic Type</label>
-                                <input type="text" class="form-control" id="specialty" placeholder="e.g. Ob/Gyn, Cardiology...">
+                                <input type="text" class="form-control" id="specialty" name="specialty" placeholder="e.g. Ob/Gyn, Cardiology..." required>
                             </div>
                             <div class="col-12">
                                 <label for="location" class="form-label" data-i18n="contact.form.location">Clinic Location</label>
-                                <input type="text" class="form-control" id="location" placeholder="e.g. Cairo, Giza...">
+                                <input type="text" class="form-control" id="location" name="location" placeholder="e.g. Cairo, Giza..." required>
                             </div>
                             <div class="col-12">
                                 <label for="message" class="form-label" data-i18n="contact.form.message">How can I help you?</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder="I'm interested in..."></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="I'm interested in..." required></textarea>
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill" data-i18n="contact.form.btn">Send Message</button>
