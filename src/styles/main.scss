@@ -1,6 +1,7 @@
 // Variables
 $primary: #0d6efd; // Medical Trust Blue
 $secondary: #198754; // Soft Medical Green
+$built-in: #17a2b8;  // Vibrant Teal/Cyan for Built-In systems
 $light: #f8f9fa;
 $dark: #212529;
 $font-family-sans-serif: 'Open Sans', system-ui, -apple-system, sans-serif;
@@ -10,6 +11,7 @@ $headings-font-family: 'Montserrat', sans-serif;
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
+  "built-in": $built-in,
   "light": $light,
   "dark": $dark
 );
