@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="120" fill="#0d6efd"/>
+  <!-- Stylized Ultrasound Probe -->
+  <path d="M200 140C200 128.954 208.954 120 220 120H292C303.046 120 312 128.954 312 140V280C312 324.183 276.183 360 232 360H220C175.817 360 140 324.183 140 280V140H200Z" fill="white"/>
+  <!-- Waves -->
+  <path d="M360 180C390 210 390 302 360 332" stroke="white" stroke-width="20" stroke-linecap="round"/>
+  <path d="M410 150C460 200 460 312 410 362" stroke="white" stroke-width="20" stroke-linecap="round" stroke-opacity="0.6"/>
+  <!-- Probe details -->
+  <rect x="180" y="160" width="80" height="12" rx="6" fill="#0d6efd" fill-opacity="0.2"/>
+  <rect x="180" y="190" width="60" height="12" rx="6" fill="#0d6efd" fill-opacity="0.2"/>
+</svg>
