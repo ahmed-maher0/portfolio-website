@@ -1,11 +1,35 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="512" height="512" rx="120" fill="#0d6efd"/>
-  <!-- Stylized Ultrasound Probe -->
-  <path d="M200 140C200 128.954 208.954 120 220 120H292C303.046 120 312 128.954 312 140V280C312 324.183 276.183 360 232 360H220C175.817 360 140 324.183 140 280V140H200Z" fill="white"/>
-  <!-- Waves -->
-  <path d="M360 180C390 210 390 302 360 332" stroke="white" stroke-width="20" stroke-linecap="round"/>
-  <path d="M410 150C460 200 460 312 410 362" stroke="white" stroke-width="20" stroke-linecap="round" stroke-opacity="0.6"/>
-  <!-- Probe details -->
-  <rect x="180" y="160" width="80" height="12" rx="6" fill="#0d6efd" fill-opacity="0.2"/>
-  <rect x="180" y="190" width="60" height="12" rx="6" fill="#0d6efd" fill-opacity="0.2"/>
+  <defs>
+    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a365d" />
+      <stop offset="50%" stop-color="#0d6efd" />
+      <stop offset="100%" stop-color="#00a8cc" />
+    </linearGradient>
+    <linearGradient id="sectorGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d6efd" />
+      <stop offset="100%" stop-color="#1a365d" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Ring -->
+  <circle cx="256" cy="256" r="230" stroke="url(#ringGradient)" stroke-width="20" fill="none" />
+
+  <!-- Ultrasound Sector -->
+  <path d="M130 220C130 180 180 140 256 140C332 140 382 180 382 220L256 360L130 220Z" fill="url(#sectorGradient)" opacity="0.9" />
+
+  <!-- Heartbeat / EKG Wave -->
+  <path d="M150 256H200L215 220L240 300L265 240L280 256H360" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Medical Cross (negative space / overlay) -->
+  <path d="M230 180H282V232H334V284H282V336H230V284H178V232H230V180Z" fill="white" opacity="0.3" />
+
+  <!-- Sound Bars / Signal -->
+  <rect x="340" y="240" width="8" height="32" rx="4" fill="#0d6efd" />
+  <rect x="355" y="220" width="8" height="72" rx="4" fill="#0d6efd" />
+  <rect x="370" y="235" width="8" height="42" rx="4" fill="#0d6efd" />
+
+  <!-- Text -->
+  <text x="50%" y="420" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="bold" font-size="42" fill="#1a365d">AHMED MAHER</text>
+  <text x="50%" y="460" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="20" fill="#1a365d" letter-spacing="2">ULTRASOUND SPECIALIST</text>
+
 </svg>
